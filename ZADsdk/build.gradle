@@ -1,5 +1,6 @@
 apply plugin: 'com.android.library'
-
+apply plugin: 'com.github.dcendents.android-maven' //this way we can find the android-maven in jcenter
+group='com.github.ZADmeng'
 android {
     compileSdkVersion 28
 
