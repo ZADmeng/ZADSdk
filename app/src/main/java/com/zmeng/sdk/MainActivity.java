@@ -5,9 +5,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.widget.LinearLayout;
 
-import com.zmt.ad.model.AdError;
-import com.zmt.ad.splash.ZADSplash;
-import com.zmt.ad.splash.ZADSplashListener;
+import com.zad.sdk.model.AdError;
+import com.zad.sdk.splash.ZADSplash;
+import com.zad.sdk.splash.ZADSplashListener;
+
 
 public class MainActivity extends AppCompatActivity {
 

@@ -37,7 +37,6 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
-    compile files('libs/ZMTAd-release.jar')
     implementation('com.github.wangdongyi:WDYBase:v1.1.3') {
         exclude(group: 'com.google.android', module: 'design')
         exclude(group: 'com.google.android', module: 'recyclerview-v7')
@@ -47,5 +46,6 @@ dependencies {
     }
     implementation files('libs/android-query-full.0.26.7.jar')
     implementation files('libs/ZAD_G.4.19.573.min.jar')
+    implementation files('libs/ZAD_base.jar')
 }
 
