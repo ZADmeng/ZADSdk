@@ -16,9 +16,13 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    packagingOptions {
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/NOTICE'
+    }
     repositories {
         flatDir {
-            dirs 'libs','../ZADsdk/libs'
+            dirs 'libs',"../ZADsdk/libs"
         }
     }
 }
