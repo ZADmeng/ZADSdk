@@ -2,7 +2,7 @@ apply plugin: 'com.android.library'
 //启用Jitpack 插件
 apply plugin: 'com.github.dcendents.android-maven'
 // 根节点添加
-version = "v0.0.12"
+version = "v0.0.13"
 group='com.github.ZADmeng'
 android {
     compileSdkVersion 28
@@ -38,7 +38,6 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     implementation('com.github.wangdongyi:WDYBase:v1.1.4')
-    implementation files('libs/android-query-full.0.26.7.jar')
     implementation files('libs/ZAD_G.4.19.573.min.jar')
     implementation files('libs/ZAD_base.jar')
 }
