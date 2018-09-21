@@ -33,7 +33,7 @@ ZADSdk.init(getApplicationContext(),appId,secretKey);
 
             }
         });
-        ```
+    
   new ZADSplash(this, view,view(自定义跳过按钮) "posId", new ZADSplashListener() {
             @Override
             public void onNoAD(AdError error) {
