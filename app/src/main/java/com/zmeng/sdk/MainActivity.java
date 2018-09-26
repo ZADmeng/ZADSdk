@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void initView() {
         main = (LinearLayout) findViewById(R.id.main);
-        new ZADSplash(this, main, "8000742064018074", new ZADSplashListener() {
+        new ZADSplash(this, main, "aaa", new ZADSplashListener() {
             @Override
             public void onNoAD(AdError error) {
                 Log.e("错误"+error.getErrorCode(), error.getErrorMsg());
