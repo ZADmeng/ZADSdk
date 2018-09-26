@@ -2,7 +2,7 @@ apply plugin: 'com.android.library'
 //启用Jitpack 插件
 apply plugin: 'com.github.dcendents.android-maven'
 // 根节点添加
-version = "v0.0.18"
+version = "v0.0.19"
 group='com.github.ZADmeng'
 android {
     compileSdkVersion 28
