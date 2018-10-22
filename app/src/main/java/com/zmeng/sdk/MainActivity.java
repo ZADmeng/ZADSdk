@@ -161,7 +161,7 @@ public class MainActivity extends AppCompatActivity {
             zadInterstitial.closePopupWindow();
             zadInterstitial = null;
         }
-        zadInterstitial = new ZADInterstitial(this, "ccc");
+        zadInterstitial = new ZADInterstitial(this, "asx");
         return zadInterstitial;
     }
 
