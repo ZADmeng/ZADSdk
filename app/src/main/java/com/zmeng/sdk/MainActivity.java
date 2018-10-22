@@ -39,37 +39,38 @@ public class MainActivity extends AppCompatActivity {
                 getIAD().setZADListener(new ZADInterstitialListener() {
                     @Override
                     public void onNoAD(AdError adError) {
-
+                        Log.e("onNoAD", "onNoAD");
                     }
 
                     @Override
                     public void onADReceive() {
                         zadInterstitial.showAsPopupWindow();
+                        Log.e("onADReceive", "onADReceive");
                     }
 
                     @Override
                     public void onADOpened() {
-
+                        Log.e("onADOpened", "onADOpened");
                     }
 
                     @Override
                     public void onADExposure() {
-
+                        Log.e("onADExposure", "onADExposure");
                     }
 
                     @Override
                     public void onADClicked() {
-
+                        Log.e("onADClicked", "onADClicked");
                     }
 
                     @Override
                     public void onADClosed() {
-
+                        Log.e("onADClosed", "onADClosed");
                     }
 
                     @Override
                     public void onADLeftApplication() {
-
+                        Log.e("onADLeftApplication", "onADLeftApplication");
                     }
                 });
                 zadInterstitial.loadAD();
@@ -81,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(MainActivity.this,LoadingActivity.class);
+                Intent intent = new Intent(MainActivity.this, LoadingActivity.class);
                 startActivity(intent);
                 onBackPressed();
             }
@@ -131,21 +132,21 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void init() {
-        ZADBanner zadBanner = new ZADBanner(this, "bb");
+        ZADBanner zadBanner = new ZADBanner(this, "bbb");
         zadBanner.setZADListener(new ZADBannerListener() {
             @Override
             public void onNoAD(AdError error) {
-                Log.e("zoubuzou ",error.getErrorMsg());
+                Log.e("zoubuzou ", error.getErrorMsg());
             }
 
             @Override
             public void onADExposure() {
-                Log.e("zoubuzou ","sdas");
+                Log.e("zoubuzou ", "sdas");
             }
 
             @Override
             public void onADClicked() {
-                Log.e("zoubuzou ","sdadfff");
+                Log.e("zoubuzou ", "sdadfff");
             }
         });
         bannerContainer.addView(zadBanner);
@@ -163,8 +164,6 @@ public class MainActivity extends AppCompatActivity {
         zadInterstitial = new ZADInterstitial(this, "ccc");
         return zadInterstitial;
     }
-
-
 
 
     private void closeAsPopup() {
