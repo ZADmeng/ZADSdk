@@ -1,6 +1,5 @@
 # ZADSdk
-## maven { url 'https://jitpack.io' }
-## implementation ('com.github.ZADmeng:ZADSdk:v0.0.16')
+[![](https://jitpack.io/v/ZADmeng/ZADSdk.svg)](https://jitpack.io/#ZADmeng/ZADSdk)
 初始化：在你的工程的application中
 ```
 ZADSdk.init(getApplicationContext(),appId,secretKey);
