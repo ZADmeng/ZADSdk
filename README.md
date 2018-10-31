@@ -1,6 +1,6 @@
 # ZADSdk
 [![](https://jitpack.io/v/ZADmeng/ZADSdk.svg)](https://jitpack.io/#ZADmeng/ZADSdk)
-初始化：在你的工程的application中
+# 初始化：在你的工程的application中
 ```
 ZADSdk.init(getApplicationContext(),appId,secretKey);
 ```
