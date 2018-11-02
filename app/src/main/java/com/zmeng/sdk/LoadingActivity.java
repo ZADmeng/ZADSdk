@@ -45,7 +45,7 @@ public class LoadingActivity extends AppCompatActivity {
 
     private void init() {
 
-        new ZADSplash(this, main, "aaa", new ZADSplashListener() {
+        new ZADSplash(this, main, "zm_ad_1_1000", new ZADSplashListener() {
             @Override
             public void onNoAD(AdError error) {
                 Log.e("错误" + error.getErrorCode(), error.getErrorMsg());

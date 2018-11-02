@@ -132,7 +132,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void init() {
-        ZADBanner zadBanner = new ZADBanner(this, "bbb");
+        ZADBanner zadBanner = new ZADBanner(this, "zm_ad_2_1000");
         zadBanner.setZADListener(new ZADBannerListener() {
             @Override
             public void onNoAD(AdError error) {

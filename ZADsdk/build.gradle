@@ -30,7 +30,13 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
-    implementation('com.github.wangdongyi:WDYBase:v1.1.5')
+    implementation('com.github.wangdongyi:WDYBase:v1.1.5'){
+        exclude(group: 'com.google.android', module: 'design')
+        exclude(group: 'com.google.android', module: 'recyclerview-v7')
+        exclude(group: 'com.google.code.gson', module: 'gson')
+        exclude(group: 'com.squareup.okhttp3', module: 'okhttp')
+        exclude(group: 'com.github.bumptech.glide', module: 'glide')
+    }
     implementation files('libs/ZAD_G.4.19.573.min.jar')
     implementation files('libs/ZAD_base.jar')
 }

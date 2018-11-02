@@ -12,6 +12,6 @@ public class BaseApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        ZADSdk.init(this,"aaa","ddd");
+        ZADSdk.init(this,"zm_app_1000","8QEYqLu7bcqFGGoE");
     }
 }
