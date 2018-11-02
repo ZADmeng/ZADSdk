@@ -1,7 +1,8 @@
 # ZADSdk
 [![](https://jitpack.io/v/ZADmeng/ZADSdk.svg)](https://jitpack.io/#ZADmeng/ZADSdk)
 # 引用
-```implementation ('com.github.ZADmeng:ZADSdk:v0.5.0'){
+```
+implementation ('com.github.ZADmeng:ZADSdk:v0.5.0'){
         exclude(group: 'com.squareup.okhttp3', module: 'okhttp')
         exclude(group: 'com.google.android', module: 'design')
         exclude(group: 'com.google.android', module: 'recyclerview-v7')
