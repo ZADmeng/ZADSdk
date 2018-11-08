@@ -12,6 +12,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
+        <meta-data
+            android:name="PUSH_APPKEY"
+            android:value="1d7512fb70e34df612a1676c" />
+        <meta-data
+            android:name="PUSH_CHANNEL"
+            android:value="default_developer" />
+
         <activity android:name=".LoadingActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -26,12 +26,13 @@ android {
 }
 
 dependencies {
-    compile fileTree(include: ['*.jar'], dir: 'libs')
+    api fileTree(include: ['*.jar'], dir: 'libs')
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     implementation('com.github.wangdongyi:WDYBase:v1.1.5')
     implementation files('libs/ZAD_G.4.19.573.min.jar')
     implementation files('libs/ZAD_base.jar')
+    implementation files('libs/ZAD_P_1.1.0.jar')
 }
 

@@ -1,4 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.zmeng.zad.sdk">
     <!-- SDK 相关声明 -->
     <uses-permission android:name="android.permission.INTERNET" />
@@ -9,6 +10,22 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />    <!-- 如果需要精确定位的话请加上此权限 -->
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" /> <!-- targetSdkVersion >= 26 时需要配置此权限，否则无法进行安装app的动作 -->
+
+    <!-- Required -->
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+
+    <!-- Optional. Required for location feature -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
     <application
         android:allowBackup="true"
         android:label="@string/app_name"
@@ -34,5 +51,52 @@
             android:name="com.qq.e.ads.ADActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
 
+        <!-- Required SDK 核心功能-->
+        <!-- Required SDK 核心功能-->
+        <!-- 可配置android:process参数将PushService放在其他进程中 -->
+        <service
+            android:name="com.push.sdk.service.PushService"
+            android:enabled="true"
+            android:exported="false"
+            android:process=":pushcore">
+            <intent-filter>
+                <action android:name="com.push.message.service.action" />
+
+            </intent-filter>
+        </service>
+
+
+        <!-- Required SDK 核心功能-->
+        <provider
+            android:name="com.push.sdk.service.DataProvider"
+            android:authorities="${applicationId}.DataProvider"
+            android:exported="true"
+            android:process=":pushcore" />
+
+        <!-- Required SDK核心功能-->
+        <receiver
+            android:name="com.push.sdk.service.PushReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Required SDK核心功能-->
+        <receiver android:name="com.push.sdk.service.AlarmReceiver" />
+
+        <!-- Required -->
+        <!--  User defined.  For test only -->
+        <!-- 通知消息、自定义消息回调，tag/alias接口结果返回需要开发者配置一个自定的广播 -->
+        <!-- 该广播需要继承Sdk提供的com.push.sdk.api.MessageReceiver类, 并如下新增一个 Intent-Filter -->
+        <receiver
+            android:name="com.zad.sdk.push.MyPushMessageReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="com.push.message.receiver.action" />
+                <category android:name="${applicationId}" />
+            </intent-filter>
+        </receiver>
     </application>
 </manifest>
