@@ -1,20 +1,5 @@
 package com.zmeng.sdk;
 
-import android.content.Intent;
-import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
-import android.view.View;
-import android.widget.FrameLayout;
-import android.widget.TextView;
-
-import com.zad.sdk.banner.ZADBanner;
-import com.zad.sdk.banner.ZADBannerListener;
-import com.zad.sdk.interstitial.ZADInterstitial;
-import com.zad.sdk.interstitial.ZADInterstitialListener;
-import com.zad.sdk.model.AdError;
-
-
 public class MainActivity  {
 
 //    private TextView text;

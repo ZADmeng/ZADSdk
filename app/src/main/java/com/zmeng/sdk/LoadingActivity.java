@@ -1,34 +1,11 @@
 package com.zmeng.sdk;
 
-import android.Manifest;
-import android.annotation.TargetApi;
-import android.content.Intent;
-import android.content.pm.PackageManager;
-import android.net.Uri;
-import android.os.Build;
-import android.os.Bundle;
-import android.os.Handler;
-import android.os.Message;
-import android.provider.Settings;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
-import android.widget.LinearLayout;
-import android.widget.Toast;
-
-import com.zad.sdk.model.AdError;
-import com.zad.sdk.splash.ZADSplash;
-import com.zad.sdk.splash.ZADSplashListener;
-
-import java.util.ArrayList;
-import java.util.List;
-
 /**
  * 作者：王东一
  * 创建时间：2018/9/21.
  */
 public class LoadingActivity {
-    private LinearLayout main;
+//    private LinearLayout main;
 //    private Handler handler = new Handler() {
 ////        @Override
 ////        public void handleMessage(Message msg) {
