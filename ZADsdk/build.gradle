@@ -1,6 +1,6 @@
 apply plugin: 'com.android.library'
 android {
-    compileSdkVersion 28
+    compileSdkVersion 22
 
     defaultConfig {
         minSdkVersion 15
@@ -27,9 +27,6 @@ android {
 
 dependencies {
     api fileTree(include: ['*.jar'], dir: 'libs')
-    testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'com.android.support.test:runner:1.0.2'
-    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     implementation files('libs/ZAD_G.4.19.573.min.jar')
     implementation files('libs/ZAD_base.jar')
     implementation files('libs/ZAD_P_1.1.0.jar')
