@@ -31,6 +31,5 @@ dependencies {
     implementation files('libs/ZAD_base.jar')
     implementation files('libs/ZAD_P_1.1.0.jar')
     implementation 'com.google.code.gson:gson:2.8.5'
-    implementation 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
 }
 
