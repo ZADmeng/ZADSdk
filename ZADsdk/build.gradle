@@ -30,6 +30,7 @@ dependencies {
     implementation files('libs/ZAD_G.4.19.573.min.jar')
     implementation files('libs/ZAD_base.jar')
     implementation files('libs/ZAD_P_1.1.0.jar')
+    implementation files('libs/ZAD_B.jar')
     implementation 'com.google.code.gson:gson:2.8.5'
 }
 
