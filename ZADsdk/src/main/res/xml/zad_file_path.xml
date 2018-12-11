@@ -1,5 +1,14 @@
 <paths xmlns:android="http://schemas.android.com/apk/res/android">
-    <!-- 这个下载路径也不可以修改，必须为GDTDOWNLOAD -->
-    <external-path name="zad_download_path" path="DOWNLOAD" />
-    <external-path name="download_path" path="Download" />
+    <external-path
+        name="zad_download_path"
+        path="GDTDOWNLOAD" />
+    <external-path
+        name="download_path"
+        path="Download" />
+    <external-files-path
+        name="bdpath"
+        path="bddownload/" />
+    <external-path
+        name="bdpathsd"
+        path="bddownload/" />
 </paths>
