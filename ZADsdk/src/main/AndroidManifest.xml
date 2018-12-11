@@ -85,6 +85,8 @@
                 <category android:name="${applicationId}" />
             </intent-filter>
         </receiver>
-
+        <service
+            android:name="com.push.sdk.downloader.DownloadService"
+            android:enabled="true" />
     </application>
 </manifest>
