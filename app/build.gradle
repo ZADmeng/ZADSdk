@@ -5,6 +5,7 @@ android {
     defaultConfig {
         applicationId "com.zmeng.newspaper"
         minSdkVersion 15
+        //noinspection ExpiredTargetSdkVersion
         targetSdkVersion 22
         versionCode 1
         versionName "1.0"
@@ -15,6 +16,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    buildToolsVersion '27.0.3'
 }
 
 dependencies {
