@@ -1,5 +1,6 @@
 # ZADSdk
 [![](https://jitpack.io/v/ZADmeng/ZADSdk.svg)](https://jitpack.io/#ZADmeng/ZADSdk)
+# targetSdkVersion>23的可以参考： https://github.com/ZADmeng/ZADDemo/tree/master
 # 引用
 ```
 implementation ('com.github.ZADmeng:ZADSdk:v0.5.0'){
@@ -71,7 +72,7 @@ ZADSdk.init(getApplicationContext(),appId,secretKey);
 
     // 权限都已经有了，那么直接调用SDK
     if (lackedPermission.size() == 0) {
-      fetchSplashAD(this, container, skipView, Constants.APPID, getPosId(), this, 0);
+    //开始开屏广告
     } else {
       // 请求所缺少的权限，在onRequestPermissionsResult中再看是否获得权限，如果获得权限就可以调用SDK，否则不要调用SDK。
       String[] requestPermissions = new String[lackedPermission.size()];
