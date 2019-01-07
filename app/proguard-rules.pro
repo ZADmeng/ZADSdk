@@ -19,3 +19,42 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
+-keep class com.qq.e.** {
+    public protected *;
+}
+-keep class android.support.v4.**{
+    public *;
+}
+-keep class android.support.v7.**{
+    public *;
+}
+-keep class MTT.ThirdAppInfoNew {
+    *;
+}
+-keep class com.tencent.** {
+    *;
+}
+ -keepclassmembers class * extends android.app.Activity { public void *(android.view.View);
+}
+-keepclassmembers enum * {
+public static **[] values();
+public static ** valueOf(java.lang.String);
+}
+-keep class android.support.annotation.Keep
+
+-keep @android.support.annotation.Keep class * {*;}
+
+-keepclasseswithmembers class * {
+    @android.support.annotation.Keep <methods>;
+}
+
+-keepclasseswithmembers class * {
+    @android.support.annotation.Keep <fields>;
+}
+
+-keepclasseswithmembers class * {
+    @android.support.annotation.Keep <init>(...);
+}
+-keep class com.baidu.mobads.*.** { *; }
+-keepclasseswithmembers  class*com.zad.sdk.*{*;}
+-keep class*com.zad.sdk.*
