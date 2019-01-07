@@ -1,6 +1,7 @@
 # ZADSdk
 [![](https://jitpack.io/v/ZADmeng/ZADSdk.svg)](https://jitpack.io/#ZADmeng/ZADSdk)
-# targetSdkVersion>23的可以参考： https://github.com/ZADmeng/ZADDemo/tree/master
+# targetSdkVersion>23的可以参考：
+### https://github.com/ZADmeng/ZADDemo/tree/master
 # 引用
 ```
 implementation ('com.github.ZADmeng:ZADSdk:v0.5.0'){
