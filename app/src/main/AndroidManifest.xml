@@ -12,9 +12,9 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
         <!--加入你的key-->
-        <!--<meta-data-->
-            <!--android:name="PUSH_APPKEY"-->
-            <!--android:value="1d7512fb70e34df612a1676c" />-->
+        <meta-data
+            android:name="PUSH_APPKEY"
+            android:value="1d7512fb70e34df612a1676c" />
         <!--加入你的渠道-->
         <meta-data
             android:name="PUSH_CHANNEL"
